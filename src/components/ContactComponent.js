@@ -182,7 +182,7 @@ class Contact extends Component {
                                     <Input type="email" id="email" name="email"
                                         placeholder="Email"
                                         value={this.state.email}
-                                        alid={errors.email === ''}
+                                        valid={errors.email === ''}
                                         invalid={errors.email !== ''}
                                         onBlur={this.handleBlur('email')}
                                         onChange={this.handleInputChange} />
