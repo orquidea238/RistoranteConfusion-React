@@ -14,6 +14,7 @@ import {
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
+import { baseUrl } from "../shared/baseUrl";
 
 
 //Validation (task3)
@@ -27,7 +28,7 @@ function RenderDish({dish}) {
         <div key={dish.id} className="col-12 col-md-5 m1">
           <Card>
             <CardImg
-              src={dish.image}
+              src={baseUrl + dish.image}
               alt={dish.name}
             />
             <CardBody>
